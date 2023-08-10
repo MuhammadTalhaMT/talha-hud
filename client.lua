@@ -115,21 +115,16 @@ Citizen.CreateThread(function()
 end)
 
 RegisterCommand('togglehud', function(source)
-    --print("3 ".. hide)
-    print("Piča")
 
     if hide then 
         SendNUIMessage({
            type = 'show_hud'
         })
         hide = false
-        print("Piča 2")
-        --print("1 ".. hide)
     else 
         SendNUIMessage({
             type = 'hide_hud'
         })    
-        print("Piča 3")
         hide = true
     end
 end)
